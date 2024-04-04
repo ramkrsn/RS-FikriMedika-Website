@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('informasiobat');
 });
+Route::get('/artikel', function () {
+    return view('artikel');
+})->name('artikel');
+
+Route::get('/artikel', 'ArtikelController@index')->name('artikel');
+
+Route::get('/artikel', 'App\Http\Controllers\ArtikelController@index')->name('artikel');
