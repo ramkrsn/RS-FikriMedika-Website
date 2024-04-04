@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%; /* Lebar 100% untuk mobile */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 22px; /* Ukuran font lebih kecil untuk mobile */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 16px; /* Ukuran font lebih kecil untuk mobile */
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media query untuk layar mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Padding lebih kecil untuk mobile */
+    }
+
+    h1 {
+        font-size: 20px; /* Ukuran font lebih kecil untuk mobile */
+    }
+
+    h2 {
+        font-size: 14px; /* Ukuran font lebih kecil untuk mobile */
+    }
+
+    ul {
+        font-size: 14px; /* Ukuran font lebih kecil untuk mobile */
+    }
+}
