@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('informasiobat');
+    return view('artikel');
 });
 Route::get('/artikel', function () {
     return view('artikel');
