@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProfilController extends Controller
+class ProfilRumahSakitController extends Controller
 {
-    //
+    public static function index()
+    {
+        return view('ProfilRumahSakit');
+    }
 }

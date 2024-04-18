@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfilRumahSakitController;
+
+use App\Http\Middleware\AuthMiddleware;
+use App\Http\Middleware\GuestMiddleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', [ProfilRumahSakitController::class, 'index'])->name('ProfilRumahSakit');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('ProfilRumahSakit');
 });

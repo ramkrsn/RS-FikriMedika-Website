@@ -28,7 +28,7 @@
 
         .header {
             background: #F1F864;
-            padding: 40px;
+            padding: 10px;
         }
 
         .logo {
@@ -38,6 +38,17 @@
         .title-container {
             background: white;
             padding: 5px 0px 5px 0px;
+        }
+
+        .image {
+            padding: 0px;
+            margin: 0px;
+            height: auto;
+            width: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center;
+            align-items: center;
         }
 
         .header-title {
@@ -71,20 +82,13 @@
             margin-bottom: 20px; /* Add spacing between sections */
             align-items: center;
         }
-
-        /* Mobile Responsive Styles */
-        @media only screen and (max-width: 768px) {
-            .main-content {
-                flex-direction: column;
-            }
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="header" class="h1">
+        <header class="header">
             <div class="logo">
-                <img src="your_logo.png" alt="RSU Fikri Medika Logo">
+                <img src="{{ asset('img/logo.png') }}" alt="RSU Fikri Medika Logo">
             </div>
         </header>
 
@@ -92,16 +96,27 @@
             <p class="header-title">Profil RSU Fikri Medika</p>
         </section>
 
-        <main class="main" class="h1">
+        <div class="image">
+            <img src="{{ asset('img/image 5.png') }}">
+        </div>
 
+        <main class="main">
             <section> 
                 <h3>Visi</h3>
                 <p>Menyediakan Rumah Sakit Swasta yang Menyediakan Layanan Berkualitas, Unggul dan Terpercaya Di Karawang</p>
             </section>
 
+            <section>
+                <img src="{{ asset('img/line.png') }}">
+            </section>
+
             <section> 
                 <h3>Misi</h3>
                 <p>Memberikan pelayanan kesehatan dan media terbaik kepada masyarakat. Mewujudkan Kesejahteraan bagi seluruh stakeholder. Peduli kepada lingkungan, masyarakat dan bangsa.</p>
+            </section>
+
+            <section>
+                <img src="{{ asset('img/line.png') }}">
             </section>
 
             <section> 
