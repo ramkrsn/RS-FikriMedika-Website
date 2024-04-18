@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadwal Dokter Fikri Medika</title>
-    <link rel="stylesheet" href="JadwalDokter.css">
+    <link rel="stylesheet" href="css/JadwalDokter.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Fikri Medika</h1>
+            <img src="image 1.png" alt="Logo Fikr Medika" class="logo"> 
+            <h1 class="judul-fikri-medika">Fikri Medika</h1>
             <h2>Jadwal Dokter</h2>
         </header>
 
         <main>
+             
             <section class="poli-penyakit-dalam">
                 <h2>Poli Penyakit Dalam</h2>
                 <ul>
