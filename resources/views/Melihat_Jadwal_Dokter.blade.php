@@ -220,11 +220,5 @@ ul {
     </div>
 </div>
  </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 FikriMedika</p>
-        </div>
-    </footer>
 </body>
 </html>
