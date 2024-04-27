@@ -108,7 +108,7 @@ ul {
 <body>
     <header>
         <div class="container_header">
-            <img src="logo fikri.png" alt="Logo FikriMedika" class="img-fluid">
+            <img src="C:\xampp\htdocs\RS-FikriMedika-Website\resources\img\logo fikri.png" alt="Logo FikriMedika" class="img-fluid">
         </div>
     </header>
     <main>
@@ -119,7 +119,7 @@ ul {
     <div> <h3>Poli Penyakit Dalam</h3>
         <ul>
             <div class="shadow p-3 mb-5 bg-body rounded">
-            <img src="fotodokter.jpeg.jpeg" class= "fotodokter">    
+            <img src="C:\xampp\htdocs\RS-FikriMedika-Website\resources\img\fotodokter.jpeg" class= "fotodokter">    
             <span class= name>Dr. Armen, Sp.PD</span>
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
@@ -131,7 +131,7 @@ ul {
         </ul>
         <ul>
             <div class="shadow p-3 mb-5 bg-body rounded">
-            <img src="fotodokter.jpeg.jpeg" class= "fotodokter">    
+            <img src="C:\xampp\htdocs\RS-FikriMedika-Website\resources\img\fotodokter.jpeg" class= "fotodokter">    
             <span class= name>Dr. Cecep Suryani S, Sp.PD</span>
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
@@ -145,7 +145,7 @@ ul {
     <div> <h3>Poli Anak</h3>
     <ul>
             <div class="shadow p-3 mb-5 bg-body rounded">
-            <img src="fotodokter.jpeg" class= "fotodokter">    
+            <img src="C:\xampp\htdocs\RS-FikriMedika-Website\resources\img\fotodokter.jpeg" class= "fotodokter">    
             <span class= name>Dr. Ade Hafni, Sp.A</span>
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
@@ -157,7 +157,7 @@ ul {
         </ul>
         <ul>
             <div class="shadow p-3 mb-5 bg-body rounded">
-            <img src="fotodokter.jpeg" class= "fotodokter">    
+            <img src="C:\xampp\htdocs\RS-FikriMedika-Website\resources\img\fotodokter.jpeg" class= "fotodokter">    
             <span class= name>Dr. Irma Laila, Sp.A</span>
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
@@ -169,7 +169,7 @@ ul {
         </ul>
         <ul>
             <div class="shadow p-3 mb-5 bg-body rounded">
-            <img src="fotodokter.jpeg" class= "fotodokter">    
+            <img src="C:\xampp\htdocs\RS-FikriMedika-Website\resources\img\fotodokter.jpeg" class= "fotodokter">    
             <span class= name>Dr. Adam Sultansah H., Sp.A</span>
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
@@ -183,7 +183,7 @@ ul {
     <div> <h3>Poli Kandungan (Obgyn)</h3>
     <ul>
             <div class="shadow p-3 mb-5 bg-body rounded">
-            <img src="fotodokter.jpeg" class= "fotodokter">    
+            <img src="C:\xampp\htdocs\RS-FikriMedika-Website\resources\img\fotodokter.jpeg" class= "fotodokter">    
             <span class= name>Dr. Dendi Suryadi K, Sp.Og</span>
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
@@ -195,7 +195,7 @@ ul {
         </ul>
         <ul>
             <div class="shadow p-3 mb-5 bg-body rounded">
-            <img src="fotodokter.jpeg" class= "fotodokter">    
+            <img src="C:\xampp\htdocs\RS-FikriMedika-Website\resources\img\fotodokter.jpeg" class= "fotodokter">    
             <span class= name>Dr. Yandi Jayaprana, Sp.Og</span>
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
@@ -207,7 +207,7 @@ ul {
         </ul>
         <ul>
             <div class="shadow p-3 mb-5 bg-body rounded">
-            <img src="fotodokter.jpeg" class= "fotodokter">    
+            <img src="C:\xampp\htdocs\RS-FikriMedika-Website\resources\img\fotodokter.jpeg" class= "fotodokter">    
             <span class= name>Dr. Mariana Afiati H, Sp.Og</span>
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
