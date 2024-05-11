@@ -19,28 +19,27 @@
     <div class="section">
         <form action="{{ route('jadwalpertemuan') }}" method="POST">
             @csrf
-
             <div class="dropdown-container">
                 <h2>Pilih opsi</h2>
-                <select class="dropdown" name="option">
-                    <option value="option1">Pertemuan dengan Dokter</option>
-                    <option value="option2">Medical Check-Up</option>
+                <select class="dropdown" name="opsi">
+                    <option value="Pertemuan dengan Dokter">Pertemuan dengan Dokter</option>
+                    <option value="Medical Check-Up">Medical Check-Up</option>
                 </select>
             </div>
 
             <div class="data-pasien">
                 <div>
                     <h2 class="spacing">Data Pasien</h2>
-                    <input type="text" name="nama_depan" placeholder="Nama Depan" class="input-choice">
+                    <input type="text" name="namadepan" placeholder="Nama Depan" class="input-choice" required>
                 </div>
                 <div>
-                    <input type="text" name="nama_belakang" placeholder="Nama Belakang" class="input-choice">
+                    <input type="text" name="namabelakang" placeholder="Nama Belakang" class="input-choice" required>
                 </div>
                 <div>
-                    <input type="text" name="nik" placeholder="NIK" class="input-choice">
+                    <input type="text" name="NIK" placeholder="NIK" class="input-choice" required>
                 </div>
                 <div>
-                    <input name="keluhan" placeholder="Keluhan Pasien" class="input-choice-keluhan"></input>
+                    <input name="keluhanpasien" placeholder="Keluhan Pasien" class="input-choice-keluhan" required></input>
                 </div>
             </div>
 
