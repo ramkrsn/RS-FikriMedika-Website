@@ -8,7 +8,25 @@ use Illuminate\Database\Eloquent\Model;
 class Doctor extends Model
 {
     use HasFactory;
-    protected $primaryKey="iddokter";
-    protected $fillable=["namadokter","jadwaldokter","polidokter","wajahdokter"];
+
+    protected $fillable = [
+        "namadokter",
+        "seninstart",
+        "seninend",
+        "selasastart",
+        "selasaend",
+        "rabustart",
+        "rabuend",
+        "kamisstart",
+        "kamisend",
+        "jumatstart",
+        "jumatend",
+        "sabtustart",
+        "sabtuend",
+        "polidokter",
+        "wajahdokter"
+    ];
+
+    protected $primaryKey = "iddokter";
     protected $guarded="iddokter";
 }

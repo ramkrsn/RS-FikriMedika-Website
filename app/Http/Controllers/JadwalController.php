@@ -22,6 +22,7 @@ class JadwalController extends Controller
             'namabelakang' => 'required|string|max:255',
             'NIK' => 'required|integer',
             'keluhanpasien' => 'required|string',
+            'tanggalpertemuan'=> 'required|date',
             'namadokter' => 'required|string', 
             'polidokter' => 'required|string', 
             'opsi' => 'required|string',

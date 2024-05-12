@@ -41,6 +41,9 @@
                 <div>
                     <input name="keluhanpasien" placeholder="Keluhan Pasien" class="input-choice-keluhan" required></input>
                 </div>
+                <div>
+                    <input type="date" name="tanggalpertemuan" placeholder="Tanggal pertemuan" class="input-choice" required>
+                </div>
             </div>
 
             <div class="dropdown-container">

@@ -14,7 +14,18 @@ return new class extends Migration
         Schema::create('doctors', function (Blueprint $table) {
             $table->id("iddokter");
             $table->string("namadokter");
-            $table->string("jadwaldokter");
+            $table->time("seninstart");
+            $table->time("seninend");
+            $table->time("selasastart");
+            $table->time("selasaend");
+            $table->time("rabustart");
+            $table->time("rabuend");
+            $table->time("kamisstart");
+            $table->time("kamisend");
+            $table->time("jumatstart");
+            $table->time("jumatend");
+            $table->time("sabtustart");
+            $table->time("sabtuend");
             $table->string("polidokter");
             $table->string("wajahdokter");
             $table->timestamps();
