@@ -392,7 +392,7 @@
                     <a href="#" class="menu-sidebar" style="text-align: end; color: #21BF73">Beranda</a>
                 </li>
                 <li>
-                    <a href="#" class="menu-sidebar" style="text-align: end; color: #21BF73">Profil</a>
+                    <a href="{{ route('profil') }}" class="menu-sidebar" style="text-align: end; color: #21BF73">Profil</a>
                 </li>
                 <li>
                     <a href="#" class="menu-sidebar" style="text-align: end; color: #21BF73">Jadwal Dokter</a>
