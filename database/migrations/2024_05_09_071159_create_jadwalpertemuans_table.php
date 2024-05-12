@@ -15,6 +15,7 @@ return new class extends Migration
             $table->bigInteger("NIK");
             $table->text("keluhanpasien");
             $table->date("tanggalpertemuan");
+            $table->time("jampertemuan");
             $table->string('polidokter'); 
             $table->string('namadokter'); 
             $table->string("opsi");

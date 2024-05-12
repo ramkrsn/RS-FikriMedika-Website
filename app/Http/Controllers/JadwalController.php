@@ -17,19 +17,18 @@ class JadwalController extends Controller
 
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'namadepan' => 'required|string|max:255',
-            'namabelakang' => 'required|string|max:255',
-            'NIK' => 'required|integer',
-            'keluhanpasien' => 'required|string',
-            'tanggalpertemuan'=> 'required|date',
-            'namadokter' => 'required|string', 
-            'polidokter' => 'required|string', 
-            'opsi' => 'required|string',
-        ]);
+        $jadwalpertemuan = new Jadwalpertemuan;
+        $jadwalpertemuan->namadepan = $request->namadepan;
+        $jadwalpertemuan->namabelakang = $request->namabelakang;
+        $jadwalpertemuan->NIK = $request->NIK;
+        $jadwalpertemuan->keluhanpasien = $request->keluhanpasien;
+        $jadwalpertemuan->tanggalpertemuan = $request->tanggalpertemuan;
+        $jadwalpertemuan->jampertemuan = $request->jampertemuan;
+        $jadwalpertemuan->namadokter = $request->namadokter;
+        $jadwalpertemuan->polidokter = $request->polidokter;
+        $jadwalpertemuan->opsi = $request->opsi;
 
-        JadwalPertemuan::create($validatedData);
-
-        return redirect()->back()->with('success', 'Jadwal Pertemuan berhasil disimpan!');
+        $jadwalpertemuan->save();
+        return redirect(url('/jadwalpertemuan'));
     }
 }

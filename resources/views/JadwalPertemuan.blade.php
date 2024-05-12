@@ -44,6 +44,9 @@
                 <div>
                     <input type="date" name="tanggalpertemuan" placeholder="Tanggal pertemuan" class="input-choice" required>
                 </div>
+                <div>
+                    <input type="time" name="jampertemuan" placeholder="Jam pertemuan" class="input-choice" required>
+                </div>
             </div>
 
             <div class="dropdown-container">
