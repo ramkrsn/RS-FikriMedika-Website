@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
+use Carbon\Carbon;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Antrian;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,11 +14,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        // User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        Antrian::create([
+            'no_antrian' => 'P003',
+            'nama_pasien' => 'Agung Ramasa',
+            'keluhan' => 'Sakit Jantung',
+            'dokter' => 'dr. AdA Hafni, Sp.A',
+            'poli' => 'Anak',
+            'tanggal' =>  Carbon::now()->format('Y-m-d'),
+            'est_jadwal' => '09:00 - 09:30',
+        ]);
     }
 }
