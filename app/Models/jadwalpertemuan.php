@@ -9,7 +9,7 @@ class JadwalPertemuan extends Model
 {
     use HasFactory;
     protected $table = 'jadwalpertemuans';
-    protected $primaryKey="id";
-    protected $fillable = ["namadepan", "namabelakang", "NIK", "keluhanpasien", "tanggalpertemuan", "polidokter", "namadokter", "opsi"]; 
-    protected $guarded="id";
+    protected $primaryKey="idjadwalpertemuan";
+    protected $fillable = ["namadepan", "namabelakang", "NIK", "keluhanpasien", "tanggalpertemuan", "jampertemuan", "polidokter", "namadokter", "opsi"]; 
+    protected $guarded="idjadwalpertemuan";
 }
