@@ -23,3 +23,7 @@ Route::get('/artikel', function () {
 Route::get('/artikel', 'ArtikelController@index')->name('artikel');
 
 Route::get('/artikel', 'App\Http\Controllers\ArtikelController@index')->name('artikel');
+
+Route::get('/', function() {
+    return view('Melihat_Jadwal_Dokter');
+});
