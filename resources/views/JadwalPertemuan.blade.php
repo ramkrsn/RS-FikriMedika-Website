@@ -48,7 +48,6 @@
                     <input type="time" name="jampertemuan" placeholder="Jam pertemuan" class="input-choice" required>
                 </div>
             </div>
-
             <div class="dropdown-container">
                 <div class="nama-dokter-container">
                     <h2 class="spacing">Pilih Dokter</h2>
@@ -66,7 +65,6 @@
                     </select>
                 </div>
             </div>
-
             <div class="next-container">
                 <button type="submit" class="next spacing">Jadwalkan Pertemuan</button>
             </div>
