@@ -40,7 +40,7 @@ class DoctorController extends Controller
         $doctor->polidokter = $request->polidokter;
         $doctor->wajahdokter = $imagePath;
         $doctor->save();
-        return redirect(url('/'));
+        return redirect(url('/dokter'));
     }
 
     public function edit_doctor(Request $request)
@@ -77,7 +77,7 @@ class DoctorController extends Controller
 
             $doctor->save();
 
-            return redirect(url('/'));
+            return redirect(url('/dokter'));
         } catch (ValidationException $error) {
             return back();
         }
@@ -87,6 +87,6 @@ class DoctorController extends Controller
     {
         $doctor = Doctor::find($request->iddokter);
         $doctor->delete();
-        return redirect(url('/'));
+        return redirect(url('/dokter'));
     }
 }
