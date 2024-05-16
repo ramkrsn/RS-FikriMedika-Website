@@ -104,7 +104,7 @@
                             </div>
                             <div class="d-flex justify-content-between">
                                 <button type="submit" class="btn btn-primary">Update</button> 
-                                <a href="{{url('/')}}" class="btn btn-danger">Cancel</a>
+                                <a href="{{url('/dokter')}}" class="btn btn-danger">Cancel</a>
                             </div>
                             @csrf
                             @method('PATCH')

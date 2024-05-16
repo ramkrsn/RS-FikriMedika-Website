@@ -6,6 +6,7 @@ use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\AntrianController;
 use App\Http\Controllers\ObatController;
 use App\Http\Controllers\PengambilanObatController;
+use App\Http\Controllers\MelihatJadwalController;
 
 
 /*
@@ -18,7 +19,7 @@ use App\Http\Controllers\PengambilanObatController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', [DoctorController::class, 'index']);
+Route::get('/dokter', [DoctorController::class, 'index']);
 
 
 Route::get('createdokter', [DoctorController::class, 'doctor']);
@@ -63,8 +64,8 @@ Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::resource('obat', ObatController::class);
 
-
-// Ewing - Pengambilan Obat
-
 Route::get('/pengambilan-obat', [PengambilanObatController::class, 'pengambilan_obat']);
+
+
+Route::get('/Melihat_Jadwal_Dokter',[ MelihatJadwalController::class, 'index']);
 
