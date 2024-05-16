@@ -5,6 +5,7 @@ use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\AntrianController;
 use App\Http\Controllers\ObatController;
+use App\Http\Controllers\PengambilanObatController;
 
 
 /*
@@ -62,4 +63,8 @@ Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::resource('obat', ObatController::class);
 
+
+// Ewing - Pengambilan Obat
+
+Route::get('/pengambilan-obat', [PengambilanObatController::class, 'pengambilan_obat']);
 
