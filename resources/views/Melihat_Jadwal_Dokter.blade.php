@@ -26,12 +26,6 @@
             @foreach ($doctors as $doctor)    
             <span class= name>{{$doctor->namadokter}}</span>
             @endforeach
-=======
-            <img src="DOKTER FOTO.jpeg" class= "fotodokter">    
-            <span class= name_doctor>@foreach ($doctorNames as $doctorName)
-                                    <li>{{ $doctorName }}</li>
-                                    @endforeach</span>
-
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
             <div class="space2">
