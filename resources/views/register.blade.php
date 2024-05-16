@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <title>Profil RSU Fikri Medika</title>
+    <title>LOGIN</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -279,29 +280,35 @@
 
             <main class="main" class="h1">
                 <section>
-                    <h3>Visi</h3>
-                    <p>Menyediakan Rumah Sakit Swasta yang Menyediakan Layanan Berkualitas, Unggul dan Terpercaya Di
-                        Karawang</p>
+                <div class="container mt-5">
+    <h2 class="text-center">Register</h2>
+    <form method="POST" action="{{ route('register') }}">
+        @csrf
+        <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+       <div class="form-group">
+            <label for="no">No Telepon</label>
+            <input type="no" class="form-control" id="no" name="no" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+   
+        <button type="submit" class="btn btn-primary">Daftar</button>
+    </form>
+    <p>Sudah memiliki akun ? <a href="{{ route('login') }}">Masuk</a></p>
+</div>
                 </section>
 
-                <section>
-                    <img src="{{ asset('assets/line.png') }}">
-                </section>
 
-                <section>
-                    <h3>Misi</h3>
-                    <p>Memberikan pelayanan kesehatan dan media terbaik kepada masyarakat. Mewujudkan Kesejahteraan bagi
-                        seluruh stakeholder. Peduli kepada lingkungan, masyarakat dan bangsa.</p>
-                </section>
 
-                <section>
-                    <img src="{{ asset('assets/line.png') }}">
-                </section>
-
-                <section>
-                    <h3>Motto</h3>
-                    <p>"Kesehatan Anda Prioritas Layanan Utama Kami"</p>
-                </section>
             </main>
 
         </section>
@@ -319,9 +326,9 @@
             </div>
             <div
                 style="display: flex; flex-direction: column; align-items: flex-end;  justify-content: flex-end; padding-right: 10px; row-gap: 0.5rem;">
-                <a href="{{ route('login') }}" class="w3-bar-item w3-button"
+                <a href="#" class="w3-bar-item w3-button"
                     style="text-align: end; width: fit-content; padding: 4px 8px; background-color: #21BF73; color: white; border-radius: 0.375rem;">Masuk</a>
-                <a href="{{ route('register') }}" class="w3-bar-item w3-button"
+                <a href="#" class="w3-bar-item w3-button"
                     style="text-align: end; width: fit-content; padding: 4px 8px; background-color: #21BF73; color: white; border-radius: 0.375rem;">Daftar</a>
             </div>
             <ul
@@ -372,6 +379,10 @@
             });
         });
     </script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </body>
 
 </html>
