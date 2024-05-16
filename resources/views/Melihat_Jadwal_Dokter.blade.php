@@ -19,13 +19,12 @@
             <h2>Jadwal Dokter</h2>
         </div>
     <div> <h3>Poli Penyakit Dalam</h3>
+    @foreach ($doctors as $doctor)
         <ul>
             <div class="shadow p-3 mb-5 bg-body rounded">
 
-            <img src="DOKTER FOTO.jpeg" class= "fotodokter">
-            @foreach ($doctors as $doctor)    
+            <img src="DOKTER FOTO.jpeg" class= "fotodokter">    
             <span class= name>{{$doctor->namadokter}}</span>
-            @endforeach
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
             <div class="space2">
@@ -34,20 +33,7 @@
             <div class="row-row-cols-auto">
             
         </ul>
-        <ul>
-            <div class="shadow p-3 mb-5 bg-body rounded">
-            <img src="DOKTER FOTO.jpeg" class= "fotodokter">
-            @foreach ($doctors as $doctor)    
-            <span class= name>{{$doctor->namadokter}}</span>
-            @endforeach
-            <div class="space">
-                Senin    Selasa     Rabu    Kamis    Jumat</div>
-            <div class="space2">
-                08.00-12.00 08.00-12.00 08.00-12.00 08.00-12.00 08.00-12.00</div>
-            <div class="container text-left">
-            <div class="row-row-cols-auto">
-        
-        </ul>
+        @endforeach
     </div>
     <div> <h3>Poli Anak</h3>
     <ul>
