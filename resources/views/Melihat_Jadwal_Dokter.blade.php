@@ -21,8 +21,10 @@
     <div> <h3>Poli Penyakit Dalam</h3>
         <ul>
             <div class="shadow p-3 mb-5 bg-body rounded">
-            <img src="DOKTER FOTO.jpeg" class= "fotodokter">    
-            <span class= name>Dr. Armen, Sp.PD</span>
+            <img src="DOKTER FOTO.jpeg" class= "fotodokter">
+            @foreach ($doctors as $doctor)    
+            <span class= name>{{$doctor->namadokter}}</span>
+            @endforeach
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
             <div class="space2">
