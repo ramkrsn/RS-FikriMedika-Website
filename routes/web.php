@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AntrianController;
 use App\Http\Controllers\ObatController;
+use App\Http\Controllers\PengambilanObatController;
 use App\Http\Controllers\MelihatJadwalController;
 
 
@@ -61,4 +62,8 @@ Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::resource('obat', ObatController::class);
 
+Route::get('/pengambilan-obat', [PengambilanObatController::class, 'pengambilan_obat']);
+
+
 Route::get('/Melihat_Jadwal_Dokter',[ MelihatJadwalController::class, 'index']);
+
