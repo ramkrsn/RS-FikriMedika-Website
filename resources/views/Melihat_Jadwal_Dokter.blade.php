@@ -22,7 +22,9 @@
         <ul>
             <div class="shadow p-3 mb-5 bg-body rounded">
             <img src="DOKTER FOTO.jpeg" class= "fotodokter">    
-            <span class= name>Dr. Armen, Sp.PD</span>
+            <span class= name_doctor>@foreach ($doctorNames as $doctorName)
+                                    <li>{{ $doctorName }}</li>
+                                    @endforeach</span>
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
             <div class="space2">
@@ -34,7 +36,7 @@
         <ul>
             <div class="shadow p-3 mb-5 bg-body rounded">
             <img src="DOKTER FOTO.jpeg" class= "fotodokter">    
-            <span class= name>Dr. Cecep Suryani S, Sp.PD</span>
+            <span class= name>{{$doctor->namadokter}}</span>
             <div class="space">
                 Senin    Selasa     Rabu    Kamis    Jumat</div>
             <div class="space2">
