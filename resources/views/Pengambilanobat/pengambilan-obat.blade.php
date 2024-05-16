@@ -282,87 +282,13 @@
         <p class="header-title poppins-bold">PENGAMBILAN OBAT</p>
 
         <section id="content" style="padding: 16px; min-height: 100%">
-            <div>
-             
-            </div>
-            <hr style="border: 1px solid black; margin: 10px 0px">
-            <div style="display: flex; flex-direction: column; gap: 0.5rem">
-                @foreach($queues as $data)
-                <div data-bs-toggle="modal" data-bs-target="#exampleModal{{ $data->id_antrian }}">
-                    <div class="shadow"
-                        style="background-color: white; display: flex; gap: 1rem; 	border-radius: 0.5rem;">
-                        <div
-                            style="background-image: url('{{ asset('./assets/doctor.png') }}'); width: 100px; height: 100px; background-color: white; border-radius: 0.5rem">
-                        </div>
-                        <div style="display: flex; flex-direction: column; justify-content: center; row-gap: 0.5rem;">
-                            <div style="font-size: 1.2rem; font-weight: 500">{{ $data->dokter }}</div>
-                            <div style="font-size: 0.8rem">{{ $data->tanggal }}, {{ $data->no_antrian }}</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal{{ $data->id_antrian }}" tabindex="-1"
-                    aria-labelledby="exampleModal{{ $data->id_antrian }}Label" aria-hidden="true">
-                    <div class="modal-dialog" style=" max-width: 440px;">
-                        <div class="modal-content">
-                            <div class="" style="background-color: #F1F864; border-radius: 0.5rem;">
-                                <div class=""
-                                    style="display: flex; padding: 12px; align-items: center; justify-content: space-between;">
-                                    <img src="{{ asset('assets/logo.png') }}" alt="">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <p style=" color: #21BF73; font-size: 20px; font-weight: bold; text-align: center;">
-                                    Jadwalkan Pertemuan</p>
-                            </div>
-                            <div class="modal-body" style="padding: 28px">
-                                <div style="display: flex; gap: 1rem">
-                                    <div
-                                        style="background-image: url('{{ asset('./assets/doctor.png') }}'); width: 80px; height: 80px; background-color: white; border-radius: 0.5rem">
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; row-gap: 0.5rem;">
-                                        <div style="font-size: 1rem; font-weight: 500">{{ $data->dokter }}</div>
-                                        <div style="font-size: 0.8rem">{{ $data->tanggal }}, {{ $data->no_antrian }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-3">
-                                    <div>
-                                        <div class="fw-semibold">Pasien</div>
-                                        <div>{{ $data->nama_pasien }}</div>
-                                    </div>
-                                    <div class="mt-2">
-                                        <div class="fw-semibold">Keluhan</div>
-                                        <div>{{ $data->keluhan }}</div>
-                                    </div>
-                                    <div class="mt-2">
-                                        <div class="fw-semibold">Tanggal Pertemuan</div>
-                                        <div>{{ $data->tanggal }}</div>
-                                    </div>
-                                    <div class="mt-2">
-                                        <div class="fw-semibold">Antrian Anda</div>
-                                        <div>{{ $data->no_antrian }}</div>
-                                    </div>
-                                    <div class="mt-2">
-                                        <div class="fw-semibold">Estimasi Jadwal</div>
-                                        <div>{{ $data->est_jadwal }}</div>
-                                    </div>
-                                </div>
-                                <div class="mt-5 d-flex" style="flex-direction: column;">
-                                    <img src="{{ asset('assets/barcode.png') }}" alt="Barcode" style="width: 300px;"
-                                        class="mx-auto">
-                                    <p class="fs-6 text-center">Scan barcode ini di loket</p>
-                                </div>
-                                <p style="text-align: center">*Anda akan mendapatkan notifikasi Whatsapp konfirmasi jika
-                                    jadwal pertemuan Anda telah tiba</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-            </div>
+        @foreach ($obats as $obat)
+            <ul>
+                <li>{{$obat->name}}</li>
+                <li>{{$obat->description}}</li>
+                <li>{{$obat->price}}</li>
+            </ul>
+        @endforeach
         </section>
     </div>
     <div style="width: 100%; height: full; position: relative; background-color: #F8FAFD; z-index: 2000">
@@ -420,13 +346,7 @@
         </div>
     </div>
 
-    @foreach ($obats as $obat)
-        <ul>
-            <li>{{$obat->name}}</li>
-            <li>{{$obat->description}}</li>
-            <li>{{$obat->price}}</li>
-        </ul>
-    @endforeach
+
     <script>
         window.addEventListener("DOMContentLoaded", () => {
             document.getElementById("openToggle").addEventListener("click", () => {
