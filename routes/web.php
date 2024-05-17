@@ -42,8 +42,6 @@ Route::get('/queue', [AntrianController::class, "index"])->name('queue.index');
 Route::get('/queue/{id}', [AntrianController::class, "show"])->name('queue.show');
 
 // routes/web.php
-
-
 Route::get('/login', function () {
     return view('login'); // login.blade.php
 })->name('login');
@@ -66,6 +64,4 @@ Route::resource('obat', ObatController::class);
 
 Route::get('/pengambilan-obat', [PengambilanObatController::class, 'pengambilan_obat']);
 
-
 Route::get('/Melihat_Jadwal_Dokter',[ MelihatJadwalController::class, 'index']);
-
