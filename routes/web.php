@@ -19,9 +19,7 @@ use App\Http\Controllers\MelihatJadwalController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-use App\Http\Controllers\ObatController;
-use App\Http\Controllers\UserController;    
-use App\Http\Controllers\AntrianController;    
+use App\Http\Controllers\UserController;     
 
 Route::get('/dokter', [DoctorController::class, 'index']);
 
@@ -74,6 +72,9 @@ Route::get('/admin/dashboard', function () {
     // Konten halaman dashboard admin
 })->middleware('admin');
 
+Route::get('/', function () {
+    return view('profil');
+})->name('profil');
 
 Route::get('/queue', [AntrianController::class, "index"])->name('queue.index');
 Route::get('/queue/{id}', [AntrianController::class, "show"])->name('queue.show');
