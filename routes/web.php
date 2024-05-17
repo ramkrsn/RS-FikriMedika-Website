@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DoctorController;  
-use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\AntrianController;
 use App\Http\Controllers\ObatController;
 use App\Http\Controllers\PengambilanObatController;
@@ -35,8 +33,8 @@ Route::get('/jadwalpertemuan', [JadwalController::class, 'index']);
 Route::post('/jadwalpertemuan', [JadwalController::class, 'store'])->name('jadwalpertemuan');
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('profil');
+})->name('profil');
 
 Route::get('/queue', [AntrianController::class, "index"])->name('queue.index');
 Route::get('/queue/{id}', [AntrianController::class, "show"])->name('queue.show');
