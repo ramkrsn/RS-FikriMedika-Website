@@ -34,7 +34,6 @@
             transition: transform 300ms ease-in;
             top: 0;
         }
-
         .menu {
             width: 32px;
         }
@@ -310,9 +309,34 @@
     </div>
 
                 
-
-
-
+=======
+                <section>
+                <div class="container mt-5">
+    <h2 class="text-center">Register</h2>
+    <form method="POST" action="{{ route('register') }}">
+        @csrf
+        <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+       <div class="form-group">
+            <label for="no">No Telepon</label>
+            <input type="no" class="form-control" id="no" name="no" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+   
+        <button type="submit" class="btn btn-primary">Daftar</button>
+    </form>
+    <p>Sudah memiliki akun ? <a href="{{ route('login') }}">Masuk</a></p>
+</div>
+                </section>
             </main>
 
         </section>
@@ -333,6 +357,7 @@
                 <a href="#" class="w3-bar-item w3-button"
                     style="text-align: end; width: fit-content; padding: 4px 8px; background-color: #21BF73; color: white; border-radius: 0.375rem;">Masuk</a>
                 <a href="{{ route('register') }}" class="w3-bar-item w3-button"
+                <a href="#" class="w3-bar-item w3-button"
                     style="text-align: end; width: fit-content; padding: 4px 8px; background-color: #21BF73; color: white; border-radius: 0.375rem;">Daftar</a>
             </div>
             <ul

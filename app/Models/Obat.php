@@ -17,6 +17,7 @@ class Obat extends Model
         'kategori',
         'manfaat',
         'bentuk',
-
+        'description',
+        'price',
     ];
 }

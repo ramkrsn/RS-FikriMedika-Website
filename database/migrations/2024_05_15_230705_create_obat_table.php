@@ -20,6 +20,8 @@ class CreateObatTable extends Migration
             $table->string('kategori');
             $table->string('manfaat');
             $table->string('bentuk');
+            $table->text('description');
+            $table->decimal('price', 8, 2);
             $table->timestamps();
         });
     }

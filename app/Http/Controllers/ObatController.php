@@ -26,6 +26,8 @@ class ObatController extends Controller
             'kategori' => 'required|string',
             'manfaat' => 'required|string',
             'bentuk' => 'required|string',
+            'description' => 'required|string',
+            'price' => 'required|numeric',
         ]);
 
         Obat::create($validatedData);
@@ -53,6 +55,8 @@ class ObatController extends Controller
             'kategori' => 'required|string',
             'manfaat' => 'required|string',
             'bentuk' => 'required|string',
+            'description' => 'required|string',
+            'price' => 'required|numeric',
         ]);
 
         Obat::whereId($id)->update($validatedData);

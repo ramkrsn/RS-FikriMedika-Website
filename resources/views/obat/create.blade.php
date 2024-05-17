@@ -32,8 +32,13 @@
             <label for="name">Bentuk</label>
             <input type="text" class="form-control" id="bentuk" name="bentuk" required>
         </div>
-       
-      
+            <label for="description">Deskripsi</label>
+            <textarea class="form-control" id="description" name="description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="price">Harga</label>
+            <input type="number" class="form-control" id="price" name="price" required>
+        </div>
         <button type="submit" class="btn btn-success">Simpan</button>
     </form>
 </div>

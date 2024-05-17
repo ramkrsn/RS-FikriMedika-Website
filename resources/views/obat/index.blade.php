@@ -25,6 +25,7 @@
                 <th>Kategori</th>
                 <th>Manfaat</th>
                 <th>Bentuk</th>
+                <th>Harga</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -36,9 +37,9 @@
                     <td>{{ $item->golongan }}</td>
                     <td>{{ $item->kategori }}</td>
                     <td>{{ $item->manfaat }}</td>
-
                     <td>{{ $item->bentuk }}</td>
-
+                    <td>{{ $item->description }}</td>
+                    <td>{{ $item->price }}</td>
                     <td>
                         <a href="{{ route('obat.edit', $item->id) }}" class="btn btn-primary">Edit</a>
                         <form action="{{ route('obat.destroy', $item->id) }}" method="POST" style="display:inline-block;">
