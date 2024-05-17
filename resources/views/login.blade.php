@@ -279,6 +279,38 @@
             </div>
 
             <main class="main" class="h1">
+                   <!-- Your login form here -->
+                   <div class="container">
+                        <div class="login-form">
+                            <h2 class="text-center">Login</h2>
+                            <form action="{{ route('login') }}" method="POST">
+                                @csrf <!-- CSRF token for security -->
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                        anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="Password">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="remember" name="remember">
+                                    <label class="form-check-label" for="remember">Remember me</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                            </form>
+                            <p>belum memiliki akun? <a href="{{ route('register') }}">Daftar</a></p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+        </section>
+    </div>
                 <section>
                 <div class="container">
         <div class="login-form">
@@ -303,11 +335,7 @@
         </div>
     </div>
                 </section>
-
-
-
             </main>
-
         </section>
     </div>
     <div style="width: 100%; height: full; position: relative; background-color: #F8FAFD;">
@@ -325,7 +353,7 @@
                 style="display: flex; flex-direction: column; align-items: flex-end;  justify-content: flex-end; padding-right: 10px; row-gap: 0.5rem;">
                 <a href="#" class="w3-bar-item w3-button"
                     style="text-align: end; width: fit-content; padding: 4px 8px; background-color: #21BF73; color: white; border-radius: 0.375rem;">Masuk</a>
-                <a href="#" class="w3-bar-item w3-button"
+                <a href="{{ route('register') }}" class="w3-bar-item w3-button"
                     style="text-align: end; width: fit-content; padding: 4px 8px; background-color: #21BF73; color: white; border-radius: 0.375rem;">Daftar</a>
             </div>
             <ul

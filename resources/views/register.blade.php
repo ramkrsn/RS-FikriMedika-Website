@@ -34,7 +34,6 @@
             transition: transform 300ms ease-in;
             top: 0;
         }
-
         .menu {
             width: 32px;
         }
@@ -279,6 +278,38 @@
             </div>
 
             <main class="main" class="h1">
+                   <!-- Your Register form here -->
+                   <div class="container">
+                        <div class="login-form">
+                            <h2 class="text-center">Register</h2>
+                            <form action="{{ route('register') }}" method="POST">
+                                @csrf <!-- CSRF token for security -->
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        aria-describedby="emailHelp" placeholder="Enter email">
+                                  
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="Password">
+                                </div>
+                             
+                                <button type="submit" class="btn btn-primary btn-block">Register</button>
+                            </form>
+                            <p>Sudah memiliki akun? <a href="{{ route('register') }}">Login</a></p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+        </section>
+    </div>
+
+                
+=======
                 <section>
                 <div class="container mt-5">
     <h2 class="text-center">Register</h2>
@@ -306,9 +337,6 @@
     <p>Sudah memiliki akun ? <a href="{{ route('login') }}">Masuk</a></p>
 </div>
                 </section>
-
-
-
             </main>
 
         </section>
@@ -328,6 +356,7 @@
                 style="display: flex; flex-direction: column; align-items: flex-end;  justify-content: flex-end; padding-right: 10px; row-gap: 0.5rem;">
                 <a href="#" class="w3-bar-item w3-button"
                     style="text-align: end; width: fit-content; padding: 4px 8px; background-color: #21BF73; color: white; border-radius: 0.375rem;">Masuk</a>
+                <a href="{{ route('register') }}" class="w3-bar-item w3-button"
                 <a href="#" class="w3-bar-item w3-button"
                     style="text-align: end; width: fit-content; padding: 4px 8px; background-color: #21BF73; color: white; border-radius: 0.375rem;">Daftar</a>
             </div>

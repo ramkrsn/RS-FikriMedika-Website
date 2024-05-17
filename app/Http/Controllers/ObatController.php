@@ -22,6 +22,10 @@ class ObatController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
+            'golongan' => 'required|string',
+            'kategori' => 'required|string',
+            'manfaat' => 'required|string',
+            'bentuk' => 'required|string',
             'description' => 'required|string',
             'price' => 'required|numeric',
         ]);
@@ -47,6 +51,10 @@ class ObatController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
+            'golongan' => 'required|string',
+            'kategori' => 'required|string',
+            'manfaat' => 'required|string',
+            'bentuk' => 'required|string',
             'description' => 'required|string',
             'price' => 'required|numeric',
         ]);

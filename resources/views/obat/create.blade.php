@@ -17,6 +17,21 @@
             <input type="text" class="form-control" id="name" name="name" required>
         </div>
         <div class="form-group">
+            <label for="name">Golongan</label>
+            <input type="text" class="form-control" id="golongan" name="golongan" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Kategori</label>
+            <input type="text" class="form-control" id="kategori" name="kategori" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Manfaat</label>
+            <input type="text" class="form-control" id="manfaat" name="manfaat" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Bentuk</label>
+            <input type="text" class="form-control" id="bentuk" name="bentuk" required>
+        </div>
             <label for="description">Deskripsi</label>
             <textarea class="form-control" id="description" name="description" required></textarea>
         </div>

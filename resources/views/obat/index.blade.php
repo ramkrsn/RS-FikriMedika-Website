@@ -21,7 +21,10 @@
             <tr>
                 <th>ID</th>
                 <th>Nama</th>
-                <th>Deskripsi</th>
+                <th>Golongan</th>
+                <th>Kategori</th>
+                <th>Manfaat</th>
+                <th>Bentuk</th>
                 <th>Harga</th>
                 <th>Aksi</th>
             </tr>
@@ -31,6 +34,10 @@
                 <tr>
                     <td>{{ $item->id }}</td>
                     <td>{{ $item->name }}</td>
+                    <td>{{ $item->golongan }}</td>
+                    <td>{{ $item->kategori }}</td>
+                    <td>{{ $item->manfaat }}</td>
+                    <td>{{ $item->bentuk }}</td>
                     <td>{{ $item->description }}</td>
                     <td>{{ $item->price }}</td>
                     <td>
