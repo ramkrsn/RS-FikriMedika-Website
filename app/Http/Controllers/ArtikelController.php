@@ -92,5 +92,8 @@ class ArtikelController extends Controller
         $artikel->delete();
 
         return redirect()->back();
+        
     }
+
 }
+

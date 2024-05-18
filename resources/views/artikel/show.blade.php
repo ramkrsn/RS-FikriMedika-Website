@@ -333,7 +333,11 @@
                 </li>
                 <li>
                     <a href="{{ route('artikel.index') }}" class="menu-sidebar"
-                        style="text-align: end; color: #21BF73">Jadwalkan Pertemuan</a>
+                        style="text-align: end; color: #21BF73">Jadwasslkan Pertemuan</a>
+                </li>
+                <li>
+                    <a href="{{ route('queue.index') }}" class="menu-sidebar"
+                        style="text-align: end; color: #21BF73">Antrian</a>
                 </li>
                 <li>
                     <a href="{{ route('artikel.index') }}" class="menu-sidebar" style="text-align: end; color: #21BF73">Artikel Online</a>

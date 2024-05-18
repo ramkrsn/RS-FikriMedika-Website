@@ -27,4 +27,3 @@ Route::get('/home', [AntrianController::class, "home"]);
 
 
 
-
